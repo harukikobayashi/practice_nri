@@ -1,0 +1,708 @@
+body {
+    font-family:　'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;;
+}
+
+/* ヘッダー */
+#pageHead {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+}
+#pageHead img {
+    vertical-align: middle;
+} 
+
+#pageHead .headerLeft {
+    margin-top: 16px;
+    margin-left: 55px;
+    margin-right: auto;
+}
+#pageHead .headerLeft a {
+    text-align: left;
+}
+#pageHead .headerRight {
+    height: 60px;
+    margin-left: auto;
+    margin-right: 0;
+}
+#pageHead .headerRight .menuButton {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+}
+#pageHead .headerRight .searchicon:hover {
+    opacity: 0.5;
+}
+#pageHead .headerRight .worldicon{
+    margin-right: 20px;
+}
+#pageHead .headerRight .worldicon:hover {
+    opacity: 0.5;
+}
+/* パンくず */
+#topicpath {
+    width: 1000px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:70px;
+}
+/* パンくず */
+#topicpath a {
+    color: #999999;
+    text-decoration: none;
+}
+#pageBody {
+    z-index: 0;
+    margin-top: 50px;
+}
+/* トップイメージ */
+#pageBody .mainVisual {
+    width: 100%;
+    height: 250px;
+    background: url("../images/h1_whats.png") no-repeat 0 0;
+    background-size: 100%;
+    margin-bottom: 30px;
+    color: #FFFFFF
+}
+#pageBody .mainVisualText {
+    width: 1000px;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pageBody .mainVisualText h1 { 
+    text-align: left;
+    font-size: 28px;
+}
+#pageBody .mainVisualText p {
+    text-align-last: left;
+    font-size: 20px;
+    padding-top: 40px;
+}
+#pageBody .mainVisual p {
+    text-align-last: left;
+    font-size: 20px;
+}
+/* SNSリンク */
+#pageBody .snsButtons {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pageBody .snsButtons ul {
+    text-align: right;
+}
+#pageBody .snsButtons ul::before{
+    content: 'Share';
+    color: #5f5d5dee;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 11.5px;
+}
+#pageBody .snsButtons li {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+    padding-left: 20px;    
+}
+#pageBody .snsButtons img {
+    font-size: 1em;
+}
+#pageBody .snsButtons img {
+    width: 25px;
+    height: 25px;
+}
+/* NRIのデジタルビジネス戦略 */
+#pageBody .mainContent {
+    width: 820px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageBody .mainContent .mainContentHead h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+}
+#pageBody .mainContent .mainContentText {
+    margin-bottom: 65px;
+}
+
+#pageBody .mainContent .mainContentText p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+#pageBody .mainContentImage {
+    margin-bottom: 5px;
+}
+#pageBody .mainContentImage img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+
+}
+
+/* PDFリンク */
+#pageBody .mainContent #pdfLink {
+    width: 295px;
+    height: 70px;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: #FFFFFF;
+    background-color: #0C5DA9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    box-sizing: border-box;
+}
+
+#pageBody .mainContent #pdfLink:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+#pageBody .mainContent #pdfLink .pdfLinkText {
+    padding-top: 14px;
+    text-align: center;
+}
+
+#pageBody .mainContent #pdfLink a {
+    color:inherit;
+    text-decoration: none;
+    display: block;
+    width: 295px;
+    height: 70px;
+    background-color: #0C5DA9;
+    transition: background-color 0.2s linear;
+}
+#pageBody .mainContent #pdfLink a:hover {
+    background-color: rgba(255,255,255,0.15);
+
+}
+#pageBody .mainContent #pdfLink .pdfLinkText p {
+    margin: 0;
+}
+#pageBody .mainContent #pdfLink .pdfLinkText span {
+    background-image:url("https://www.nri.com/static/common/images/icon-pdf.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 35px;
+}
+
+#pageBody .mainContent #pdfLink img {
+    float: right;
+    border-style: none;
+    margin-left: 15px;
+}
+
+/* DXの取組み */
+.boxArticles {
+    width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+
+.panelImage {
+    width: 183px;
+    height: 183px;
+    border: 1px solid #CCCCCC;
+    transition: border 0.2s linear;
+    position: relative;
+}
+.panelImage:hover {
+    border-color: #005BAB;
+
+}
+.panel {
+    width: 185px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.panel a {
+    text-decoration: none;
+    color: #333333;
+}
+.boxArticles .panel .heading {
+    margin-top: 14px;
+}
+
+.boxArticles .panel .heading a{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+}
+.boxArticles .panel .heading a:hover {
+    text-decoration: underline;
+
+}
+.panal a:hover {
+    text-decoration: underline;
+}
+.panel p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.panel .panelImage .boxArticlesCategory{
+    font-family: "sans-serif";
+    position: absolute;
+    width: 178px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-left: px;
+    background-color: #005BAB;
+    z-index: 2;
+}
+
+.panel .panelImage figure {
+    margin: 0;
+}
+.panel .panelImage img {
+    max-width: 100%;
+    height: auto;
+}
+.panel ul {
+    overflow: hidden;
+    padding: 0;
+}
+.panel ul li {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 9px 10px;
+    margin: 0 0 5px 0;
+
+}
+.panel ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+.panel ul li a:hover{
+    text-decoration: underline;
+}
+
+.panel time {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.857;
+}
+/* NRIの強み */
+#pageBody .companyStrength {
+    width: 820px;
+    background-color: #DEECF7;
+    margin-bottom: 65px;
+}
+#pageBody .companyStrength .csContent {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#pageBody .companyStrength .csContent p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+#pageBody .companyStrength .csContent ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#pageBody .companyStrength .csContent .csListTop {
+    float: left;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20;
+    margin-right: 20px;
+    padding-left: 0px;
+    display:table;
+}
+
+
+#pageBody .companyStrength .csContent .csListTop a {
+    color:inherit;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    transition: background-color 0.2s linear;
+}
+#pageBody .companyStrength .csContent .csListTop a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+#pageBody .companyStrength .csContent .csListTop a span {
+    display: block;
+    text-align: center;
+    color: inherit;
+    background:url("../images/icon-chevronRight.svg") 5% 50% no-repeat;
+    background-size: 4px 8px;
+}
+
+
+#pageBody .companyStrength .csContent .csListTop:last-child {
+    margin-right: 0;
+}
+
+#pageBody .companyStrength .csContent .csListTop:last-child a span {
+    display: block;
+    text-align: center;
+    color: inherit;
+    background:url("../images/icon-chevronRight.svg") 5% 50% no-repeat;
+    background-size: 4px 8px;
+}
+
+#pageBody .companyStrength .csContent .csListBottom{
+    float: left;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    display: table;
+}
+#pageBody .companyStrength .csContent .csListBottom a {
+    color: inherit;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    transition: background-color 0.2s linear;
+
+}
+#pageBody .companyStrength .csContent .csListBottom a:hover {
+    background-color: rgba(0,0,0,0.05);
+    
+}
+#pageBody .companyStrength .csContent .csListBottom a span {
+    display: block;
+    text-align: center;
+    color: inherit;
+    background:url("../images/icon-chevronRight.svg") 5% 50% no-repeat;
+    background-size: 4px 8px;
+}
+
+#pageBody .companyStrength .csContent .csListBottom:last-child{
+    margin-right: 0;
+}
+#pageBody .companyStrength ul {
+    margin: 0;
+    padding-left: 0;
+}
+#pageBody .csContent ul li {
+    width: 240px;
+    list-style: none;
+    color: #0B419A;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: table;
+}
+
+
+/* ページリンク */
+#pageBody .mainContent .pageLink-formerNextPage {
+    font-size: 16px;
+    margin-top:165px;
+    margin-bottom:70px;
+}
+
+#pageBody .mainContent .pageLink-formerNextPage a {
+    color: #0c419a;
+    text-decoration: none;
+}
+#pageBody .mainContent .pageLink-formerNextPage a:hover {
+    text-decoration: underline;
+}　
+#pageBody .mainContent .pageLink-formerNextPage .formerPage {
+    text-align: left;
+    float:left;
+}
+#pageBody .mainContent .pageLink-formerNextPage:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+#pageBody .mainContent .pageLink-formerNextPage .nextPage {
+    float:right;
+    text-align: right;
+}
+
+/* 企業情報 */
+#pageBody .companyInfo {
+    width: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#pageBody .companyInfo h2{
+    color: #333333;
+    font-size: 20px;
+    line-height: 1.9;
+    border-top: 2px solid #333333;
+    border-bottom: 1px dotted #999999;
+    padding-top: 20px ;
+    padding-bottom: 25px ;
+    margin-top: 125px;
+
+}
+#pageBody .companyInfo h3 {
+    clear: #333333;
+    font-size: 15px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+#pageBody .companyInfo ul {
+    width: 1000px;
+    padding: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #999999;
+}
+#pageBody .companyInfo ul:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#pageBody .companyInfo ul li {
+    list-style-type: none;
+    width: 250px;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0px 10px 0;
+    flex: 1 0 auto;
+    text-align: left;
+    float: left;
+    
+}
+
+#pageBody .companyInfo ul li a {
+    color: #0c419a;
+    text-decoration: none;
+    display: block;
+}
+
+#pageBody .companyInfo ul li a:hover {
+    text-decoration: underline;
+}
+
+#pageBody .companyInfo ul li a::before {
+    content: '';
+    background-image: url("../images/icon-chevronRight.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 4px;
+    height: 8px;
+    display: inline-block;
+    background-size: contain;
+    margin-right: 12px;
+}
+
+/* 前のページ */
+.pageLink-formerPage {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.pageLink-formerPage p {
+    color: #0c419a;
+}
+.pageLink-formerPage p a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+.pageLink-formerPage p a::before {
+     content: '';
+    background-image: url("../images/icon-chevronLeft.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 4px;
+    height: 8px;
+    display: inline-block;
+    background-size: contain;
+    margin-right: 12px;
+}
+
+.pageLink-formerPage p a:hover {
+    text-decoration: underline;
+}
+/* Follow Us */
+.followUs {
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    margin-top: 95px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+#pageBody .followUs .snsButtons ul {
+    text-align: center;
+    padding: 0;
+}
+#pageBody .followUs .snsButtons ul::before {
+    content: 'Follow Us';
+    color: #005bac;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pageBody .followUs .snsButtons ul li {
+    padding-left: 30px;
+}
+/* フッター */
+#pageFoot {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+/* リンク集 */
+#pageFoot .pageNavi {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pageFoot .pageNavi ul {
+    width: 235px;
+    padding: 0;
+    margin-top: 0;
+}
+#pageFoot .pageNavi ul li ::before { 
+    content: '';
+    background-image: url("../images/icon-chevronRight.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 4px;
+    height: 8px;
+    display: inline-block;
+    background-size: contain;
+    margin-right: 12px;
+} 
+
+#pageFoot .pageNavi ul li {
+    color: #666666;
+    line-height: 1.5;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    
+}
+
+#pageFoot .pageNavi ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+#pageFoot .pageNavi ul li a:hover {
+    text-decoration: underline;
+}
+#pageFoot .pageNavi ul li:first-child {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 5px;
+}
+
+/* ポリシー */
+#pageFoot .companyPolicy {
+    width: 1000px;
+    padding-left: 0;
+    margin: 50px auto 20px; 
+    font-size: 0;
+}
+
+#pageFoot .companyPolicy li {
+    color: #999999;
+    list-style: none;
+    border-left: 1px solid #999999;
+    font-size: 12px;
+    padding: 0 17px;
+    display: inline-block;
+}
+#pageFoot .companyPolicy li:first-child {
+    border-left: none;
+    padding-left: 0px;
+    display: inline-block;
+}
+#pageFoot .companyPolicy li a {
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+}
+#pageFoot .companyPolicy li a:hover {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+/* コピーライト */
+#pageFoot #copyright {
+    width: 1000px;
+    font-family: Helvetica;
+    font-size: 10px;
+    line-height: 1.9;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 75px;
+}
+/* ページトップボタン */
+#pageFoot .toPagetop {
+    width: 100%;
+    height: 60px;
+    margin-top: 55px;
+}
+
+#pageFoot .toPagetop a img {
+    display: inline-block;
+    margin-right: auto;
+    position: fixed;
+    z-index: 100;
+    top: 100%;
+    left: 100%;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
